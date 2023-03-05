@@ -3,7 +3,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(libfoo_binding_bin, m){
+PYBIND11_MODULE(libfoo_binding, m){
     m.doc() = "Foo python binding";
     m.def("foo", &foo, "foo() sums arguments");
 }

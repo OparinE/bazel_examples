@@ -22,15 +22,16 @@ py_test(
     srcs = [
         "test/foo_py_test.py",
     ],
-    data = [":foo_binding_bin"],
+    data = [":foo_binding"],
 )
 
 cc_binary(
-    name = "foo_binding_bin",
+    name = "foo_binding",
     srcs = [
         "test/foo_binding.cpp",
     ],
     linkshared = True,
+    linkstatic = False,
     deps = [
         ":foo",
         "//3rd_party/pybind11:pybind11_py3",
