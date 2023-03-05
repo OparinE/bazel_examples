@@ -22,23 +22,6 @@ py_test(
     srcs = [
         "test/foo_py_test.py",
     ],
-    #    data = [":foo_binding"],
-    deps = [
-        #        ":intermediate_step",
-        #        ":test_module",
-        "foo_binding",
-    ],
-)
-
-py_library(
-    name = "test_module",
-    srcs = ["test/test_module.py"],
-    data = [":foo_binding"],
-)
-
-py_library(
-    name = "foo_binding",
-    srcs = ["test/__init__.py"],
     data = [":foo_binding_bin"],
 )
 
@@ -48,7 +31,6 @@ cc_binary(
         "test/foo_binding.cpp",
     ],
     linkshared = True,
-    linkstatic = True,
     deps = [
         ":foo",
         "//3rd_party/pybind11:pybind11_py3",
