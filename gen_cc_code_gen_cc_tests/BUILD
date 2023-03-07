@@ -12,4 +12,4 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
-generate_msgs(message_list)
+generate_msgs(msg_list=message_list)
