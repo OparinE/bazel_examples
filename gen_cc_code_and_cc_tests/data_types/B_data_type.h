@@ -2,9 +2,9 @@
 
 #include <string>
 
-namespace msg
+namespace data_types
 {
-    struct Cp{
+    struct B{
         std::string text;
     };
 }

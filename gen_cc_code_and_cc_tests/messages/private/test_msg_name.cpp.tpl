@@ -1,7 +1,6 @@
 #include "{_INCLUDE_}"
 #include <gtest/gtest.h>
 #include <memory>
-#include <string>
 
 namespace
 {

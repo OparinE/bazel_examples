@@ -1,7 +1,7 @@
 #pragma once
 
 #include "{_INCLUDE_}"
-#include "i_msg.h"
+#include "messages/i_msg.h"
 
 namespace msg
 {
@@ -12,7 +12,7 @@ public:
   const char* MsgName() const { return "{_MSG_CLASS_NAME_}"; }
 
 private:
-  {_MSG_PAYLOAD_} data{};
+  {_DATA_TYPE_} data{};
 };
 
 }       //msg

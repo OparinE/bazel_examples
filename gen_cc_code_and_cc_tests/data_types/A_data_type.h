@@ -1,8 +1,8 @@
 #pragma once
 
-namespace msg
+namespace data_types
 {
-    struct Ap{
+    struct A{
         int x;
         int y;
     };
