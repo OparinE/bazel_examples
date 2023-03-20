@@ -1,4 +1,4 @@
-load("//messages:generate_msgs.bzl", "generate_msgs")
+load("//messages:private/generate_msgs.bzl", "generate_msgs")
 load("//messages:msg_list.bzl", "message_list")
 
 exports_files([

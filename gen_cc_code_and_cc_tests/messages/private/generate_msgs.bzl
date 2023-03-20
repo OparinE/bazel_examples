@@ -1,4 +1,4 @@
-load("//messages:generate_file.bzl", "generate_file")
+load("//messages:private/generate_file.bzl", "generate_file")
 
 def generate_msgs(msg_list):
     for msg_class_name, attrs in msg_list.items():

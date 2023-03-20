@@ -2,20 +2,23 @@ cc_library(
     name = "foo",
     srcs = [
         "src/foo.cpp",
-        "src/foo.h",
     ],
+    hdrs = [
+        "src/foo.h",
+    ]
 )
 
-#cc_test(
-#    name = "foo_cc_test",
-#    srcs = [
-#        "test/foo_test.cpp",
-#    ],
-#    deps = [
-#        "@googletest//:gtest",
-#        "@googletest//:gtest_main",
-#    ],
-#)
+cc_test(
+   name = "foo_cc_test",
+   srcs = [
+       "test/foo_cc_test.cpp",
+   ],
+   deps = [
+        "foo",
+       "@googletest//:gtest",
+       "@googletest//:gtest_main",
+   ],
+)
 
 py_test(
     name = "foo_py_test",

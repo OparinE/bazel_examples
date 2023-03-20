@@ -1,1 +1,9 @@
 # sudo apt-get install python3-dev
+
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
+git_repository(
+    name = "googletest",
+    branch = "v1.10.x",
+    remote = "https://github.com/google/googletest",
+)
