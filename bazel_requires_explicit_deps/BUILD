@@ -1,19 +1,12 @@
 cc_library(
-    name = "lowlevel",
-    srcs = ["src/lowlevel.cpp"],
-    hdrs = ["src/lowlevel.h"],
+    name = "lib",
+    srcs = ["src/lib.cpp"],
+    hdrs = ["src/lib.h"],
     includes = ["src"],
-)
-
-cc_library(
-    name = "highlevel",
-    hdrs = ["src/highlevel.h"],
-    includes = ["src"],
-    deps = [":lowlevel"],
 )
 
 cc_binary(
     name = "main",
     srcs = ["src/main.cpp"],
-    deps = [":highlevel"],
+    deps = [":lib"],
 )
