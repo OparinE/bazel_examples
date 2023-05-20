@@ -1,5 +1,4 @@
 #pragma once
-#include "i_msg.h"
 
 namespace msg
 {

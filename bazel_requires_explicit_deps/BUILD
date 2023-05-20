@@ -1,7 +1,7 @@
 cc_library(
     name = "lib",
     srcs = ["src/lib.cpp"],
-    hdrs = ["src/lib.h"],
+    # hdrs = ["src/lib.h"],
     includes = ["src"],
 )
 

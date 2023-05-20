@@ -26,6 +26,8 @@ py_test(
         "test/foo_py_test.py",
     ],
     data = [":foo_binding"],
+    size = "small",
+    tags = ["optional_test"],
 )
 
 cc_binary(
@@ -34,7 +36,6 @@ cc_binary(
         "test/foo_binding.cpp",
     ],
     linkshared = True,
-    linkstatic = False,
     deps = [
         ":foo",
         "//3rd_party/pybind11:pybind11_py3",

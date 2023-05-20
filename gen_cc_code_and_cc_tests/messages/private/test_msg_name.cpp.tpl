@@ -10,3 +10,4 @@ TEST({_MSG_CLASS_NAME_}, Trivial)
     EXPECT_EQ("{_MSG_CLASS_NAME_}", message->MsgName());
 }
 }
+

@@ -10,3 +10,4 @@ TEST({_MSG_CLASS_NAME_}, IsDefaultConstructible)
     EXPECT_TRUE(result);
 }
 }
+
